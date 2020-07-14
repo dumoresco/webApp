@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="icons/css/all.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <script>
+        if ( 'serviceWorker' in navigator ) {
+            navigator.serviceWorker.register('sw.js')
+            .then(function() {
+                console.log("Service Worker registrado com sucesso");
+            })
+        .catch(function() {
+        console.log("Falha ao registrar o Service Worker");
+        });
+        }
+        </script>
+    <header>
+        <ul class="menu" id="menu">
+            <li class="active" id="close"><i class="fas fa-times" ></i></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#" id="disabled">Projetos</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+        <nav class="navbar">
+            <i class="fas fa-bars" id="bars"></i>
+            <a href="#contact">Contato</a>
+        </nav>
+        <div class="hero">
+            <h1 id="name"></h1>
+            <div class="subtitle">
+                <p>Front-End Developer</p>
+                <p>Web Designer</p>
+            </div>
+        </div>
+    </header>
+    <section class="about" id="about">
+        <div class="content">
+            <h2>Sobre Mim</h2>
+            <div class="aboutTxt">
+                <p>Lorem ipsum ullamcorper congue auctor purus tincidunt elit fermentum aliquam nunc, viverra class nibh aptent aenean leo pharetra quisque porttitor semper ornare, etiam ullamcorper egestas sagittis pharetra habitant id luctus sodales. </p>
+                <p>Lorem ipsum ullamcorper congue auctor purus tincidunt elit fermentum aliquam nunc, viverra class nibh aptent aenean leo pharetra quisque porttitor semper ornare, etiam ullamcorper egestas sagittis pharetra habitant id luctus sodales. facilisis dolor leo gravida per neque sem pellentesque tristique sit neque potenti, <span> dictum vestibulum mi risus curabitur </span>eleifend hac faucibus malesuada id. </p>
+            </div>
+            <div class="socialMedia">
+                <li><a href="https://www.instagram.com/dumoresco/?hl=pt-br" target="blank"><i class="fab fa-instagram"></i>Instagram</a></li>
+                <li><a href="https://github.com/dumoresco" target="blank"><i class="fab fa-github"></i>Github</a></li>
+                <li><a href="https://www.linkedin.com/in/eduardo-moresco-a44b11195/" target="blank"><i class="fab fa-linkedin"></i>LinkedIn</a></li>
+            </div>
+        </div>
+    </section>
+    <section class="skills" id="skills">
+        <div class="content">
+            <h2>Conhecimentos</h2>
+            <p>Lorem ipsum ullamcorper congue auctor purus tincidunt elit fermentum aliquam nunc, viverra class nibh aptent aenean leo pharetra quisque porttitor semper ornare, etiam ullamcorper egestas sagittis pharetra habitant id luctus sodales. </p>
+            <div class="groupItens">
+                <div class="itens">
+                    <h3>html</h3>
+                    <i class="fab fa-html5"></i>
+                </div>
+                <div class="itens">
+                    <h3>css</h3>
+                    <i class="fab fa-css3-alt"></i>
+                </div>
+                <div class="itens">
+                    <h3>javascript</h3>
+                    <i class="fab fa-js-square"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="content">
+            <h2>Contato</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, esse omnis deleniti vero explicabo beatae ea sit sed doloribus, in iure? Ipsam quod, totam magnam eos fugit illum exercitationem quas!</p>
+            <form action="">
+                <div class="field-group">
+                    <div class="field">
+                        <input type="text" id="nome" placeholder="Nome">
+                    </div>
+                    <div class="field">
+                        <input type="text" placeholder="Assunto">
+                    </div>
+                </div>
+                <div class="field">
+                    <input type="email" placeholder="E-Mail">
+                </div>
+                <div class="field">
+                    <textarea placeholder="Mensagem" name="message" id="" cols="30" rows="5"></textarea>
+                </div>
+                <button class="btnSend">Enviar<i class="fas fa-arrow-right"></i></button>
+            </form>
+        </div>
+    </section>
+    <footer class="rodape">
+        <p>&copy;Todos os direitos reservados</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

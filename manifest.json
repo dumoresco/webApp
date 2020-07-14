@@ -1,0 +1,18 @@
+{
+"name": "Portfolio",
+"short_name": "Portfolio",
+"description": "Descrição do site",
+"start_url": "index.html",
+"scope": ".",
+"background_color": "#EEE",
+"theme_color": "#4A148C",
+"display": "standalone",
+"orientation": "portrait-primary",
+"dir": "ltr",
+"lang": "pt-BR",
+"icons": [{
+    "src": "assets/icone.png",
+    "type": "image/png",
+    "sizes": "512x512"
+    }]
+}
